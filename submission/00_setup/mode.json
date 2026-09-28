@@ -1,0 +1,22 @@
+{
+  "current_slice": "B3-edge",
+  "support_prefill": false,
+  "support_slice": "",
+  "prefill_box_ids": [
+    "adasind_123090.jpg:1",
+    "adasind_123090.jpg:2"
+  ],
+  "members": [
+    "dat",
+    "hung",
+    "thanh"
+  ],
+  "assignments": {
+    "dat": "B4-mid",
+    "hung": "B3-dense",
+    "thanh": "B3-edge"
+  },
+  "self": "thanh",
+  "slice": "B3-edge",
+  "degrade": []
+}

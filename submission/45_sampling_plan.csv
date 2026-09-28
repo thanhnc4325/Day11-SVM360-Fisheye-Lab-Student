@@ -1,0 +1,9 @@
+camera_id,slice_type,frames,risk,rationale
+front,normal,25,"Nhiều vật trong khung (xe/người đi đường), méo vừa ở vùng giữa ảnh","Mốc so sánh cho front: đường thẳng ban ngày, mật độ vừa; đủ để đo drift khi so với hard, không cần nhiều hơn vì ít lỗi cấu trúc"
+front,hard,30,"Vật cắt ở rìa vòng kính, rider/xe ba bánh dễ nhầm class, đám đông, ngược sáng/đêm",Camera trước thấy nhiều vật nhất và nhiều ca class khó (R03/R04); hard > normal để phủ truncated ở rìa và crowd Bằng chứng B3-edge: 5 MISSING do phủ ignore lên xe đỗ; model gọi ThreeWheeler là Car/Truck.
+rear,normal,20,"Lùi xe trong bãi, vật ít, thân xe ego/cản sau chiếm đáy ảnh",Ít biến thiên khi chạy thẳng; 20 frame đủ kiểm ego_body và lens_border ổn định cho camera sau
+rear,hard,30,"Người/trẻ em sát cản sau, vạch ô đỗ khi lùi, ánh sáng yếu, ống kính bẩn/mưa","Ca lùi đỗ là ca dùng chính của SVM; vật thấp sát xe dễ lọt ngưỡng H=40 hoặc bị nhầm vào ignore, cần nhiều hard Reference 199770 đặt ego_body sai chỗ cho thấy cần soát ego từng frame."
+left,normal,20,"Gương/thân xe ego chiếm phần lớn nửa ảnh, lề đường gần",Mốc cho camera hông trái; kiểm polygon ego_body (gương) có ổn định giữa các frame
+left,hard,27,"Vật ở seam front-left/rear-left xuất hiện trên hai camera, xe máy vượt sát, curb và vạch ô đỗ rất gần",Seam là nơi dễ đánh dấu nhầm DUPLICATE hoặc bỏ sót; méo rìa lớn nhất ở camera hông; phân bổ hard cao hơn normal
+right,normal,20,"Tương tự left: gương/thân xe, vỉa hè, người đi bộ bên đường","Mốc cho camera hông phải, cùng quy mô với left để so cân bằng hai bên"
+right,hard,28,"Seam front-right/rear-right, người đi bộ từ vỉa hè bước xuống, xe đỗ sát khi vào ô","Seam và méo rìa giống left; phía nào sát vỉa hè tuỳ luật lái của nước thu dữ liệu, nên giữ gần cân bằng với left (28 vs 27) và điều chỉnh khi biết bối cảnh Bằng chứng B3-edge 199770: người trong vùng tối dưới mái hiên bị sót (R3, M13)."

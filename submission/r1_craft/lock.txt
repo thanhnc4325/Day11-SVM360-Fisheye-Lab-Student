@@ -1,0 +1,19 @@
+round: r1_craft
+slice: B3-edge
+sha256: 56af5c4359ba1907fd49fb8264dbc6cee5be51ffdacf8fd0f5a52b8102ad4d1b
+code: 56AF-5C43
+locked_at: 2026-09-28T18:25:28+07:00
+shapes: box=20, polygon=14
+prefill_kept: 20
+prefill_edited: 0
+new: 0
+history:
+  round: r1_craft
+  slice: B3-edge
+  sha256: cf9705619cd2546ef1632d593762859b8e41aa85f4df9a241f7f397fef58be44
+  code: CF97-0561
+  locked_at: 2026-09-28T18:17:54+07:00
+  shapes: box=20, polygon=10
+  prefill_kept: 20
+  prefill_edited: 0
+  new: 0
